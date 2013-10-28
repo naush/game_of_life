@@ -1,6 +1,6 @@
 window.onload = function() {
   var width = 10;
-  var height = 10;
+  var height = 15;
   var world = World.build(width, height);
   world = World.randomize(world, width, height);
   var tick = function(world, width, height, iteration) {

@@ -11,7 +11,7 @@ window.onload = function() {
       if (iteration > 0) {
         tick(world, width, height, iteration);
       }
-    }, 1000);
+    }, 100);
   };
-  tick(world, width, height, 50);
+  tick(world, width, height, 100);
 };

@@ -18,5 +18,27 @@ var World = {
       }
     }
     return world;
+  },
+
+  glider: function(world, x, y) {
+    world[x][y] = 1;
+    world[x + 1][y - 2] = 1;
+    world[x + 1][y] = 1;
+    world[x + 2][y - 1] = 1;
+    world[x + 2][y] = 1;
+    return world;
+  },
+
+  spaceship: function(world, x, y) {
+    world[x][y] = 1;
+    world[x][y + 2] = 1;
+    world[x + 1][y + 3] = 1;
+    world[x + 2][y + 3] = 1;
+    world[x + 3][y] = 1;
+    world[x + 3][y + 3] = 1;
+    world[x + 4][y + 1] = 1;
+    world[x + 4][y + 2] = 1;
+    world[x + 4][y + 3] = 1;
+    return world;
   }
 };
